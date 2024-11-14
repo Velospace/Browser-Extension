@@ -1,1 +1,59 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5f9341;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #5f9341;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4b7c34;
+}
+
+/* Remove default list styling */
+#ul-el {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+/* Style for each list item */
+#ul-el li {
+    margin: 10px 0; /* Add some space between each link */
+    padding: 5px 0; /* Padding for better spacing */
+    font-size: 18px; /* Adjust font size */
+}
+
+/* Style for links */
+#ul-el a {
+    text-decoration: none; /* Remove underline */
+    color: #5f9341; /* Use the green color */
+    font-weight: bold; /* Make text bold */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for links */
+#ul-el a:hover {
+    background-color: #e8f4e1; /* Light green background on hover */
+}
