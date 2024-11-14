@@ -53,15 +53,21 @@
                 myLeads.push(inputEl.value);
                 console.log(myLeads);
 
-                ulEl.innerHTML = "";
+                ulEl.innerHTML = ""; // Clear previous list items
                 
+                // Using the alternative method with createElement and appendChild
                 for (let i = 0; i < myLeads.length; i++) {
                     const li = document.createElement("li");
-                    li.innerHTML = `<a href="${myLeads[i]}" target="_blank">${myLeads[i]}</a>`;
-                    ulEl.appendChild(li);
+                    const link = document.createElement("a");
+                    link.href = myLeads[i];
+                    link.target = "_blank";
+                    link.textContent = myLeads[i];  // Set the link text to the URL
+
+                    li.appendChild(link);  // Append the link to the list item
+                    ulEl.appendChild(li);  // Append the list item to the unordered list
                 }
                 
-                inputEl.value = "";
+                inputEl.value = ""; // Clear the input field
             });
         </script>
     </body>
