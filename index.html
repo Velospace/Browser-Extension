@@ -18,7 +18,6 @@
                 font-size: 16px;
             }
 
-
             button {
                 background-color: #5f9341;
                 color: white;
@@ -38,17 +37,28 @@
     </head>
     <body>
         <input type="text" id="input-el" placeholder="Enter a link here">
-
         <button id="input-btn">SAVE INPUT</button>
+
+        <ul id="ul-el"></ul>
         
-        <script src="index.js">
+        <script>
             const myLeads = [];
             const inputEl = document.getElementById("input-el");
+            
+            const ulEl = document.getElementById("ul-el");
 
             const inputBtn = document.getElementById("input-btn");
             inputBtn.addEventListener("click", function() {
                 myLeads.push(inputEl.value);
                 console.log(myLeads);
+
+                ulEl.innerHTML = "";
+                for (let i = 0; i < myLeads.length; i++) {
+                    const li = document.createElement("li");
+                    li.textContent = myLeads[i];
+                    ulEl.appendChild(li);
+                }
+                
                 inputEl.value = "";
             });
         </script>
