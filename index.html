@@ -41,6 +41,11 @@
 
         <button id="input-btn">SAVE INPUT</button>
         
-        <script src="index.js"></script>
+        <script src="index.js">
+            const inputBtn = document.getElementById("input-btn");
+            inputBtn.addEventListener("click", function() {
+                console.log("Button clicked!");
+            });
+        </script>
     </body>
 </html>
