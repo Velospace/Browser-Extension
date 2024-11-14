@@ -47,12 +47,8 @@
             const ulEl = document.getElementById("ul-el");
 
             const inputBtn = document.getElementById("input-btn");
-            inputBtn.addEventListener("click", function() {
-                if (inputEl.value === "") { return; }
-                
-                myLeads.push(inputEl.value);
-                console.log(myLeads);
 
+            function renderLeads() {
                 ulEl.innerHTML = "";
                 
                 for (let i = 0; i < myLeads.length; i++) {
@@ -65,8 +61,17 @@
                     li.appendChild(link);
                     ulEl.appendChild(li);
                 }
+            }
+
+            inputBtn.addEventListener("click", function() {
+                if (inputEl.value === "") { return; }
                 
-                inputEl.value = ""
+                myLeads.push(inputEl.value);
+                console.log(myLeads);
+
+                renderLeads();
+                
+                inputEl.value = "";
             });
         </script>
     </body>
