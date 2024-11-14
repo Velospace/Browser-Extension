@@ -29,31 +29,27 @@ button:hover {
     background-color: #4b7c34;
 }
 
-/* Remove default list styling */
 #ul-el {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Style for each list item */
 #ul-el li {
-    margin: 10px 0; /* Add some space between each link */
-    padding: 5px 0; /* Padding for better spacing */
-    font-size: 18px; /* Adjust font size */
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 18px;
 }
 
-/* Style for links */
 #ul-el a {
-    text-decoration: none; /* Remove underline */
-    color: #5f9341; /* Use the green color */
-    font-weight: bold; /* Make text bold */
+    text-decoration: none;
+    color: #5f9341;
+    font-weight: bold;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease;
 }
 
-/* Hover effect for links */
 #ul-el a:hover {
-    background-color: #e8f4e1; /* Light green background on hover */
+    background-color: #e8f4e1;
 }
