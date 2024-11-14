@@ -1,1 +1,33 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* Style the input field */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5f9341; /* Green border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't add to width */
+    font-size: 16px;
+}
+
+/* Style the button */
+button {
+    background-color: #5f9341; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px; /* Adds some space between input and button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #4b7c34; /* Darker green on hover */
+}
