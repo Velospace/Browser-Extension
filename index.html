@@ -53,12 +53,12 @@
                 
                 for (let i = 0; i < myLeads.length; i++) {
                     const li = document.createElement("li");
-                    const link = document.createElement("a");
-                    link.href = myLeads[i];
-                    link.target = "_blank";
-                    link.textContent = myLeads[i];
-
-                    li.appendChild(link);
+                    
+                    li.innerHTML = `
+                        <a href="${myLeads[i]}" target="_blank">
+                            ${myLeads[i]}
+                        </a>
+                    `;
                     ulEl.appendChild(li);
                 }
             }
